@@ -1,17 +1,9 @@
 require("tictactoe")
-
-WIDTH = 900
-HEIGHT = 600
-
-SQUARE_H = HEIGHT/3
-SQUARE_W = WIDTH/3
-
-function love.conf(t)
-  t.console = true
-end
+require("constants")
 
 function love.load()
-	love.window.setMode(WIDTH, HEIGHT, {resizable=false})
+	love.window.setMode(WIDTH, HEIGHT, {resizable=false, vsync=0})
+  love.window.setTitle("TicTacToe")
   font = love.graphics.newFont("assets/pressstart.ttf", 30)
   boardFont = love.graphics.newFont("assets/pressstart.ttf", 50)
   scoreFont = love.graphics.newFont("assets/pressstart.ttf", 20)
