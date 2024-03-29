@@ -47,3 +47,8 @@ luac.out
 # End of https://www.toptal.com/developers/gitignore/api/lua
 
 *.love
+windows-version/
+linux-version/
+*.AppImage
+*.tar.gz
+*.zip
